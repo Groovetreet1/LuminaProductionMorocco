@@ -1,9 +1,10 @@
-import { setRequestLocale } from "next-intl/server";
+﻿import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 import { prisma } from "@/lib/prisma";
 import { formatPrice } from "@/lib/format";
 import { Link } from "@/i18n/navigation";
 import { Wallet, ShoppingCart, Clock, MessageSquare, ArrowRight } from "lucide-react";
+export const dynamic = "force-dynamic";
 
 export default async function AdminDashboardPage({
   params,
@@ -51,7 +52,7 @@ export default async function AdminDashboardPage({
 
       <div className="border border-line rounded-3xl bg-card/40 overflow-hidden">
         <div className="flex items-center justify-between px-6 py-4 border-b border-line">
-          <h2 className="font-display text-lg text-cream">Commandes récentes</h2>
+          <h2 className="font-display text-lg text-cream">Commandes rÃ©centes</h2>
           <Link href="/admin/commandes" className="flex items-center gap-1 text-sm text-gold hover:gap-2 transition-all">
             Tout voir <ArrowRight className="w-4 h-4" />
           </Link>
@@ -60,7 +61,7 @@ export default async function AdminDashboardPage({
           <table className="w-full text-sm">
             <thead>
               <tr className="text-muted text-xs uppercase tracking-wider">
-                <th className="text-start px-6 py-3">N°</th>
+                <th className="text-start px-6 py-3">NÂ°</th>
                 <th className="text-start px-6 py-3">Client</th>
                 <th className="text-start px-6 py-3">Ville</th>
                 <th className="text-start px-6 py-3">Total</th>

@@ -1,8 +1,9 @@
-import { setRequestLocale } from "next-intl/server";
+﻿import { setRequestLocale } from "next-intl/server";
 import { prisma } from "@/lib/prisma";
 import { Link } from "@/i18n/navigation";
 import { deletePost } from "../actions";
 import { Plus, Pencil, Trash2 } from "lucide-react";
+export const dynamic = "force-dynamic";
 
 export default async function AdminBlogPage({
   params,
@@ -39,7 +40,7 @@ export default async function AdminBlogPage({
               </div>
               <p className="text-xs text-muted truncate">{p.titleAr}</p>
               <p className="text-xs text-muted mt-1">
-                {new Date(p.createdAt).toLocaleDateString("fr-MA")} · {p.category}
+                {new Date(p.createdAt).toLocaleDateString("fr-MA")} Â· {p.category}
               </p>
             </div>
             <div className="flex items-center gap-2">

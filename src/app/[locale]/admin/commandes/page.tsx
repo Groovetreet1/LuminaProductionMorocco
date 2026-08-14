@@ -1,10 +1,11 @@
-import { setRequestLocale } from "next-intl/server";
+﻿import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 import { prisma } from "@/lib/prisma";
 import { formatPrice } from "@/lib/format";
 import { updateOrderStatus, deleteOrder } from "../actions";
 import { Trash2 } from "lucide-react";
 import ExportButton from "@/components/admin/ExportButton";
+export const dynamic = "force-dynamic";
 
 const STATUSES = ["PENDING", "PAID", "CONFIRMED", "SHIPPED", "DELIVERED", "CANCELLED"];
 
@@ -87,14 +88,14 @@ export default async function AdminOrdersPage({
             <div className="flex flex-wrap gap-2">
               {o.items.map((item) => (
                 <span key={item.id} className="text-xs bg-white/5 border border-line rounded-full px-3 py-1 text-muted">
-                  {item.name} × {item.quantity} — {formatPrice(item.price * item.quantity)}
+                  {item.name} Ã— {item.quantity} â€” {formatPrice(item.price * item.quantity)}
                 </span>
               ))}
             </div>
 
             {o.notes && (
               <p className="text-xs text-muted mt-3 bg-white/5 rounded-xl px-4 py-2">
-                📝 {o.notes}
+                ðŸ“ {o.notes}
               </p>
             )}
 
@@ -102,17 +103,17 @@ export default async function AdminOrdersPage({
               <div className="flex flex-wrap gap-2 mt-3">
                 {o.utmSource && (
                   <span className="text-[11px] bg-sky-500/10 border border-sky-500/30 text-sky-400 rounded-full px-2.5 py-0.5">
-                    📱 {o.utmSource}
+                    ðŸ“± {o.utmSource}
                   </span>
                 )}
                 {o.utmCampaign && (
                   <span className="text-[11px] bg-violet-500/10 border border-violet-500/30 text-violet-400 rounded-full px-2.5 py-0.5">
-                    🎯 {o.utmCampaign}
+                    ðŸŽ¯ {o.utmCampaign}
                   </span>
                 )}
                 {o.utmContent && (
                   <span className="text-[11px] bg-amber-500/10 border border-amber-500/30 text-amber-400 rounded-full px-2.5 py-0.5">
-                    📄 {o.utmContent}
+                    ðŸ“„ {o.utmContent}
                   </span>
                 )}
                 {o.utmMedium && (

@@ -1,8 +1,9 @@
-import { setRequestLocale } from "next-intl/server";
+﻿import { setRequestLocale } from "next-intl/server";
 import { prisma } from "@/lib/prisma";
 import { savePost } from "../../actions";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "@/i18n/navigation";
+export const dynamic = "force-dynamic";
 
 export default async function PostFormPage({
   params,
@@ -57,7 +58,7 @@ export default async function PostFormPage({
         </div>
 
         <div className={section}>
-          <label className={label}>Contenu (FR) * — markdown simple (**titre**, - liste, paragraphes)</label>
+          <label className={label}>Contenu (FR) * â€” markdown simple (**titre**, - liste, paragraphes)</label>
           <textarea required rows={10} className={`${input} font-mono text-sm`} name="contentFr" defaultValue={v("contentFr")} />
           <label className={`${label} mt-4`}>Contenu (AR) *</label>
           <textarea required rows={10} dir="rtl" className={`${input} font-mono text-sm`} name="contentAr" defaultValue={v("contentAr")} />
@@ -70,7 +71,7 @@ export default async function PostFormPage({
               <input className={input} name="image" defaultValue={v("image")} placeholder="/blog/mon-article.svg" />
             </div>
             <div>
-              <label className={label}>Catégorie</label>
+              <label className={label}>CatÃ©gorie</label>
               <select className={`${input} cursor-pointer`} name="category" defaultValue={v("category") || "astuce"}>
                 <option value="astuce" className="bg-card">astuce</option>
                 <option value="guide" className="bg-card">guide</option>
@@ -80,7 +81,7 @@ export default async function PostFormPage({
             <div className="flex items-end pb-2">
               <label className="flex items-center gap-2 text-sm text-cream cursor-pointer">
                 <input type="checkbox" name="published" defaultChecked={post ? post.published : true} className="accent-gold w-4 h-4" />
-                Publié
+                PubliÃ©
               </label>
             </div>
           </div>

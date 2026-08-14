@@ -1,10 +1,11 @@
-import { notFound } from "next/navigation";
+﻿import { notFound } from "next/navigation";
 import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 import { prisma } from "@/lib/prisma";
 import ProductDetail from "@/components/products/ProductDetail";
 import ProductCard from "@/components/landing/ProductCard";
 import type { Metadata } from "next";
+export const dynamic = "force-dynamic";
 
 export async function generateMetadata({
   params,
@@ -15,7 +16,7 @@ export async function generateMetadata({
   const product = await prisma.product.findUnique({ where: { slug } });
   if (!product) return {};
   return {
-    title: `${locale === "ar" ? product.nameAr : product.nameFr} — LUMINA`,
+    title: `${locale === "ar" ? product.nameAr : product.nameFr} â€” LUMINA`,
     description: locale === "ar" ? product.descriptionAr : product.descriptionFr,
   };
 }

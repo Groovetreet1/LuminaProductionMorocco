@@ -1,8 +1,9 @@
-import { setRequestLocale } from "next-intl/server";
+﻿import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 import { prisma } from "@/lib/prisma";
 import { markMessageRead } from "../actions";
 import { Mail, Phone, MessageSquare } from "lucide-react";
+export const dynamic = "force-dynamic";
 
 export default async function AdminMessagesPage({
   params,
@@ -42,7 +43,7 @@ export default async function AdminMessagesPage({
                     )}
                   </p>
                   <p className="text-xs text-muted">
-                    {new Date(m.createdAt).toLocaleString("fr-MA")} · {m.subject || "Sans sujet"}
+                    {new Date(m.createdAt).toLocaleString("fr-MA")} Â· {m.subject || "Sans sujet"}
                   </p>
                 </div>
               </div>

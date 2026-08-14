@@ -1,8 +1,9 @@
-import { setRequestLocale } from "next-intl/server";
+﻿import { setRequestLocale } from "next-intl/server";
 import { prisma } from "@/lib/prisma";
 import { saveProduct } from "../../actions";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "@/i18n/navigation";
+export const dynamic = "force-dynamic";
 
 export default async function ProductFormPage({
   params,
@@ -39,7 +40,7 @@ export default async function ProductFormPage({
         <input type="hidden" name="id" value={product?.id ?? ""} />
 
         <div className={section}>
-          <h2 className="font-display text-lg text-cream mb-4">Identité</h2>
+          <h2 className="font-display text-lg text-cream mb-4">IdentitÃ©</h2>
           <div className="grid sm:grid-cols-2 gap-4">
             <div>
               <label className={label}>Nom (FR) *</label>
@@ -92,7 +93,7 @@ export default async function ProductFormPage({
               <input type="number" className={input} name="burnHours" defaultValue={v("burnHours") || "40"} />
             </div>
             <div>
-              <label className={label}>Catégorie</label>
+              <label className={label}>CatÃ©gorie</label>
               <select className={`${input} cursor-pointer`} name="category" defaultValue={v("category") || "signature"}>
                 <option value="signature" className="bg-card">signature</option>
                 <option value="luxe" className="bg-card">luxe</option>
@@ -114,10 +115,10 @@ export default async function ProductFormPage({
 
         <div className={section}>
           <h2 className="font-display text-lg text-cream mb-4">Image</h2>
-          <label className={label}>Chemin image (ou laissez vide pour générer automatiquement)</label>
+          <label className={label}>Chemin image (ou laissez vide pour gÃ©nÃ©rer automatiquement)</label>
           <input className={input} name="image" defaultValue={v("image")} placeholder={`/products/${v("slug") || "nom"}.svg`} />
           <p className="text-xs text-muted mt-2">
-            Astuce : pour générer une image SVG automatique, laissez vide et utilisez un slug propre en anglais (ex: vanille-royale).
+            Astuce : pour gÃ©nÃ©rer une image SVG automatique, laissez vide et utilisez un slug propre en anglais (ex: vanille-royale).
           </p>
         </div>
 
@@ -125,7 +126,7 @@ export default async function ProductFormPage({
           type="submit"
           className="self-start px-8 py-3.5 rounded-full bg-gradient-to-r from-gold to-gold-light text-background font-bold hover:opacity-90 transition-opacity"
         >
-          {product ? "Enregistrer les modifications" : "Créer le produit"}
+          {product ? "Enregistrer les modifications" : "CrÃ©er le produit"}
         </button>
       </form>
     </div>

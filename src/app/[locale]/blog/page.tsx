@@ -1,13 +1,14 @@
-import { setRequestLocale } from "next-intl/server";
+﻿import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 import { prisma } from "@/lib/prisma";
 import { Link } from "@/i18n/navigation";
 import { ArrowRight, Calendar } from "lucide-react";
 import type { Metadata } from "next";
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Le journal LUMINA — Blog",
-  description: "Conseils, inspirations et l'envers du décor de notre atelier de bougies artisanales.",
+  title: "Le journal LUMINA â€” Blog",
+  description: "Conseils, inspirations et l'envers du dÃ©cor de notre atelier de bougies artisanales.",
 };
 
 export default async function BlogPage({

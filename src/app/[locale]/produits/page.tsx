@@ -1,13 +1,14 @@
-import { setRequestLocale } from "next-intl/server";
+﻿import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 import { prisma } from "@/lib/prisma";
 import ProductCard from "@/components/landing/ProductCard";
 import { ProductsToolbar } from "@/components/products/ProductsToolbar";
 import type { Metadata } from "next";
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Boutique — LUMINA",
-  description: "Bougies décoratives artisanales marocaines : cire de soja naturelle, parfums premium.",
+  title: "Boutique â€” LUMINA",
+  description: "Bougies dÃ©coratives artisanales marocaines : cire de soja naturelle, parfums premium.",
 };
 
 const CATEGORIES = ["all", "signature", "luxe", "saison"];

@@ -1,4 +1,4 @@
-import { setRequestLocale } from "next-intl/server";
+﻿import { setRequestLocale } from "next-intl/server";
 import { prisma } from "@/lib/prisma";
 import Hero from "@/components/landing/Hero";
 import Marquee from "@/components/landing/Marquee";
@@ -11,11 +11,12 @@ import Gift from "@/components/landing/Gift";
 import FAQ from "@/components/landing/FAQ";
 import Newsletter from "@/components/landing/Newsletter";
 import type { Metadata } from "next";
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "LUMINA — Bougies décoratives artisanales",
+  title: "LUMINA â€” Bougies dÃ©coratives artisanales",
   description:
-    "Bougies décoratives artisanales faites à la main au Maroc. Cire naturelle, parfums premium, design luxueux. Livraison partout au Maroc.",
+    "Bougies dÃ©coratives artisanales faites Ã  la main au Maroc. Cire naturelle, parfums premium, design luxueux. Livraison partout au Maroc.",
 };
 
 export default async function HomePage({

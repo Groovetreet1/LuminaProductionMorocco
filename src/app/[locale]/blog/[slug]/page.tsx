@@ -1,10 +1,11 @@
-import { notFound } from "next/navigation";
+﻿import { notFound } from "next/navigation";
 import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 import { prisma } from "@/lib/prisma";
 import { Link } from "@/i18n/navigation";
 import { ArrowLeft, Calendar } from "lucide-react";
 import type { Metadata } from "next";
+export const dynamic = "force-dynamic";
 
 export async function generateMetadata({
   params,
@@ -15,7 +16,7 @@ export async function generateMetadata({
   const post = await prisma.blogPost.findUnique({ where: { slug } });
   if (!post) return {};
   return {
-    title: `${locale === "ar" ? post.titleAr : post.titleFr} — LUMINA`,
+    title: `${locale === "ar" ? post.titleAr : post.titleFr} â€” LUMINA`,
   };
 }
 
@@ -37,7 +38,7 @@ function renderContent(content: string) {
         <ul key={i} className="flex flex-col gap-2 my-4">
           {block.split("\n").map((line, j) => (
             <li key={j} className="text-muted leading-relaxed flex gap-2">
-              <span className="text-gold mt-2">•</span>
+              <span className="text-gold mt-2">â€¢</span>
               {line.replace(/^- /, "")}
             </li>
           ))}

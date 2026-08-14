@@ -1,4 +1,4 @@
-import { notFound } from "next/navigation";
+﻿import { notFound } from "next/navigation";
 import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 import { prisma } from "@/lib/prisma";
@@ -6,14 +6,15 @@ import { Link } from "@/i18n/navigation";
 import { formatPrice } from "@/lib/format";
 import { CheckCircle2, Home } from "lucide-react";
 import CopyOrderNumber from "@/components/checkout/CopyOrderNumber";
+export const dynamic = "force-dynamic";
 
 const STATUS_LABELS: Record<string, { fr: string; ar: string }> = {
-  PENDING: { fr: "En attente", ar: "قيد الانتظار" },
-  PAID: { fr: "Payée", ar: "مدفوعة" },
-  CONFIRMED: { fr: "Confirmée", ar: "مؤكدة" },
-  SHIPPED: { fr: "Expédiée", ar: "تم الشحن" },
-  DELIVERED: { fr: "Livrée", ar: "تم التسليم" },
-  CANCELLED: { fr: "Annulée", ar: "ملغاة" },
+  PENDING: { fr: "En attente", ar: "Ù‚ÙŠØ¯ Ø§Ù„Ø§Ù†ØªØ¸Ø§Ø±" },
+  PAID: { fr: "PayÃ©e", ar: "Ù…Ø¯ÙÙˆØ¹Ø©" },
+  CONFIRMED: { fr: "ConfirmÃ©e", ar: "Ù…Ø¤ÙƒØ¯Ø©" },
+  SHIPPED: { fr: "ExpÃ©diÃ©e", ar: "ØªÙ… Ø§Ù„Ø´Ø­Ù†" },
+  DELIVERED: { fr: "LivrÃ©e", ar: "ØªÙ… Ø§Ù„ØªØ³Ù„ÙŠÙ…" },
+  CANCELLED: { fr: "AnnulÃ©e", ar: "Ù…Ù„ØºØ§Ø©" },
 };
 
 export default async function OrderSuccessPage({
@@ -67,7 +68,7 @@ export default async function OrderSuccessPage({
         </div>
 
         <p className="text-xs text-muted mb-8">
-          📋 Gardez votre numéro de commande — vous en aurez besoin pour suivre votre commande.{" "}
+          ðŸ“‹ Gardez votre numÃ©ro de commande â€” vous en aurez besoin pour suivre votre commande.{" "}
           <Link href="/suivi" className="text-gold underline underline-offset-2 hover:opacity-80 transition-opacity">
             Suivre ma commande
           </Link>

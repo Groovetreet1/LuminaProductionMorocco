@@ -1,10 +1,11 @@
-import { setRequestLocale } from "next-intl/server";
+﻿import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 import { prisma } from "@/lib/prisma";
 import { formatPrice } from "@/lib/format";
 import { Link } from "@/i18n/navigation";
 import { deleteProduct } from "../actions";
 import { Plus, Pencil, Trash2, Megaphone } from "lucide-react";
+export const dynamic = "force-dynamic";
 
 export default async function AdminProductsPage({
   params,
@@ -37,7 +38,7 @@ export default async function AdminProductsPage({
                 <th className="text-start px-6 py-3">Produit</th>
                 <th className="text-start px-6 py-3">Prix</th>
                 <th className="text-start px-6 py-3">Stock</th>
-                <th className="text-start px-6 py-3">Catégorie</th>
+                <th className="text-start px-6 py-3">CatÃ©gorie</th>
                 <th className="text-start px-6 py-3">En vedette</th>
                 <th className="text-end px-6 py-3">Actions</th>
               </tr>
@@ -69,7 +70,7 @@ export default async function AdminProductsPage({
                     <span className={p.stock <= 5 ? "text-red-400" : "text-emerald-400"}>{p.stock}</span>
                   </td>
                   <td className="px-6 py-3 text-muted">{p.category}</td>
-                  <td className="px-6 py-3">{p.featured ? "⭐" : "—"}</td>
+                  <td className="px-6 py-3">{p.featured ? "â­" : "â€”"}</td>
                   <td className="px-6 py-3">
                     <div className="flex items-center justify-end gap-2">
                       <Link

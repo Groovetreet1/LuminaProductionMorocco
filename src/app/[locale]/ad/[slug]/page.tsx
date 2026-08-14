@@ -1,8 +1,9 @@
-import { notFound } from "next/navigation";
+﻿import { notFound } from "next/navigation";
 import { setRequestLocale } from "next-intl/server";
 import { prisma } from "@/lib/prisma";
 import AdLanding from "@/components/ad/AdLanding";
 import type { Metadata } from "next";
+export const dynamic = "force-dynamic";
 
 export async function generateMetadata({
   params,
@@ -15,14 +16,14 @@ export async function generateMetadata({
   const name = locale === "ar" ? product.nameAr : product.nameFr;
   const price = product.price.toFixed(0);
   return {
-    title: `${name} — Offre spéciale ${price} MAD | LUMINA`,
+    title: `${name} â€” Offre spÃ©ciale ${price} MAD | LUMINA`,
     description:
       locale === "ar"
-        ? `${product.descriptionAr} اطلب الآن وادفع عند الاستلام. توصيل 24-48 ساعة.`
-        : `${product.descriptionFr} Commandez maintenant, payez à la livraison. Livraison 24-48h partout au Maroc.`,
+        ? `${product.descriptionAr} Ø§Ø·Ù„Ø¨ Ø§Ù„Ø¢Ù† ÙˆØ§Ø¯ÙØ¹ Ø¹Ù†Ø¯ Ø§Ù„Ø§Ø³ØªÙ„Ø§Ù…. ØªÙˆØµÙŠÙ„ 24-48 Ø³Ø§Ø¹Ø©.`
+        : `${product.descriptionFr} Commandez maintenant, payez Ã  la livraison. Livraison 24-48h partout au Maroc.`,
     robots: { index: false, follow: true },
     openGraph: {
-      title: `${name} — ${price} MAD`,
+      title: `${name} â€” ${price} MAD`,
       description: product.descriptionFr,
       images: [{ url: product.image }],
     },
