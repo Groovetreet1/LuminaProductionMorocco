@@ -1,5 +1,5 @@
 import { PrismaClient } from "../src/generated/prisma/client";
-import { PrismaBetterSqlite3 } from "@prisma/adapter-better-sqlite3";
+import { PrismaPg } from "@prisma/adapter-pg";
 import { readFileSync } from "node:fs";
 
 const productsData = JSON.parse(
@@ -9,8 +9,13 @@ const blogData = JSON.parse(
   readFileSync(new URL("../scripts/blog.json", import.meta.url), "utf8")
 );
 
-const adapter = new PrismaBetterSqlite3({
-  url: process.env.DATABASE_URL ?? "file:./dev.db",
+const connectionString =
+  process.env.DATABASE_URL ?? "postgresql://postgres:postgres@localhost:5432/lumina";
+const needsSsl =
+  connectionString.includes("render.com") || process.env.DATABASE_SSL === "true";
+const adapter = new PrismaPg({
+  connectionString,
+  ssl: needsSsl ? { rejectUnauthorized: false } : undefined,
 });
 const prisma = new PrismaClient({ adapter });
 

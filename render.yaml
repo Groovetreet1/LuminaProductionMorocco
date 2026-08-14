@@ -6,15 +6,13 @@ services:
     region: frankfurt
     buildCommand: npm install --include=dev && npx prisma generate && npm run build
     startCommand: npx prisma db push && npx prisma db:seed && npm run start
-    disk:
-      name: lumina-data
-      mountPath: /var/data
-      sizeGB: 1
     envVars:
       - key: NODE_VERSION
         value: "22"
       - key: DATABASE_URL
-        value: file:/var/data/dev.db
+        fromDatabase:
+          name: lumina-db
+          property: connectionString
       - key: ADMIN_USERNAME
         sync: false
       - key: ADMIN_PASSWORD
@@ -25,3 +23,9 @@ services:
         sync: false
       - key: NEXT_PUBLIC_APP_URL
         sync: false
+
+databases:
+  - name: lumina-db
+    databaseName: lumina
+    plan: free
+    region: frankfurt
