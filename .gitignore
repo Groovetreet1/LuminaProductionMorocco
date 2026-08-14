@@ -47,3 +47,5 @@ dev.db*
 
 # local logs
 dev-server.log
+
+!.env.example
