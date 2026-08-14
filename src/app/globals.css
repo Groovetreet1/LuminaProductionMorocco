@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0b0a08;
+  --foreground: #f4ede2;
+  --gold: #d4a94f;
+  --gold-light: #f0d28e;
+  --cream: #f4ede2;
+  --muted: #9c927f;
+  --card: #151209;
+  --line: #2a2417;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-gold: var(--gold);
+  --color-gold-light: var(--gold-light);
+  --color-cream: var(--cream);
+  --color-muted: var(--muted);
+  --color-card: var(--card);
+  --color-line: var(--line);
+
+  --font-sans: var(--font-inter), var(--font-cairo), system-ui, sans-serif;
+  --font-display: var(--font-playfair), var(--font-cairo), serif;
+
+  --animate-marquee: marquee 30s linear infinite;
+  --animate-flicker: flicker 3s ease-in-out infinite;
+  --animate-float: float 6s ease-in-out infinite;
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  @keyframes flicker {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.55; }
+  }
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-14px); }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+html.candle-cursor-active,
+html.candle-cursor-active * {
+  cursor: none !important;
+}
+
+h1, h2, h3, .font-display {
+  font-family: var(--font-display);
+}
+
+::selection {
+  background: var(--gold);
+  color: #0b0a08;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0b0a08;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2417;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gold);
+}
+
+.text-gradient-gold {
+  background: linear-gradient(120deg, #f0d28e 0%, #d4a94f 45%, #a87d2f 70%, #f0d28e 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.glass {
+  background: rgba(21, 18, 9, 0.6);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(212, 169, 79, 0.14);
+}
+
+.glow-gold {
+  box-shadow: 0 0 40px rgba(212, 169, 79, 0.25), 0 0 120px rgba(212, 169, 79, 0.08);
+}
+
+input, textarea, select {
+  outline: none;
+}
+
+.field {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--line);
+  border-radius: 0.75rem;
+  padding: 0.8rem 1rem;
+  color: var(--foreground);
+  transition: border-color 0.2s;
+}
+.field:focus {
+  border-color: var(--gold);
+}
+.field::placeholder {
+  color: #6b6355;
+}

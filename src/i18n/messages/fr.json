@@ -1,0 +1,359 @@
+{
+  "meta": {
+    "title": "LUMINA — Bougies décoratives artisanales",
+    "description": "Bougies décoratives artisanales faites à la main au Maroc. Cire naturelle, parfums premium, design luxueux."
+  },
+  "nav": {
+    "home": "Accueil",
+    "products": "Boutique",
+    "blog": "Blog",
+    "contact": "Contact",
+    "admin": "Admin",
+    "cart": "Panier",
+    "tracking": "Suivi",
+    "orderNow": "Commander"
+  },
+  "hero": {
+    "badge": "Artisanat Marocain · Cire Naturelle",
+    "title1": "L'art de la lumière",
+    "title2": "fait main",
+    "subtitle": "Des bougies décoratives sculptées à la main, parfumées aux meilleurs arômes. Chaque pièce est unique, chaque flamme raconte une histoire.",
+    "cta1": "Découvrir la collection",
+    "cta2": "Notre histoire",
+    "scroll": "Faites défiler"
+  },
+  "marquee": [
+    "100% Cire Naturelle",
+    "Fait Main au Maroc",
+    "Parfums Premium",
+    "Emballage Cadeau",
+    "Livraison Partout au Maroc",
+    "40 Heures de Brûlage"
+  ],
+  "stats": {
+    "candles": "Bougies créées",
+    "clients": "Clients satisfaits",
+    "hours": "Heures de brûlage",
+    "rating": "Note moyenne"
+  },
+  "collection": {
+    "badge": "Collection",
+    "title": "Nos créations signature",
+    "subtitle": "Chaque bougie est coulée à la main dans notre atelier, avec une attention particulière aux détails.",
+    "viewAll": "Voir toute la boutique",
+    "featured": "Coup de cœur",
+    "soldOut": "Épuisé",
+    "sale": "Promo",
+    "addToCart": "Ajouter au panier",
+    "added": "Ajouté !"
+  },
+  "story": {
+    "badge": "Notre atelier",
+    "title": "Du cire brute à l'œuvre d'art",
+    "p1": "LUMINA est née d'une passion pour les détails. Chaque bougie passe par nos mains, du choix de la cire de soja premium au coulage à la main dans nos moules exclusifs.",
+    "p2": "Nous sourçons nos parfums auprès de maisons de parfumerie renommées et décorons chaque pièce avec des fleurs séchées, de l'or fin et des matières naturelles marocaines.",
+    "cta": "Découvrir notre savoir-faire"
+  },
+  "features": {
+    "title": "Pourquoi choisir LUMINA ?",
+    "subtitle": "Une expérience sensorielle complète, pensée pour durer.",
+    "items": [
+      {
+        "title": "Cire de soja naturelle",
+        "desc": "Sans toxines, sans paraffine. Une combustion propre jusqu'à 40 heures."
+      },
+      {
+        "title": "Parfums d'exception",
+        "desc": "Concentrations élevées en huiles parfumées de qualité supérieure."
+      },
+      {
+        "title": "Pièces uniques",
+        "desc": "Chaque bougie est décorée à la main : fleurs séchées, or fin, motifs exclusifs."
+      },
+      {
+        "title": "Livraison offerte",
+        "desc": "Livraison 24-48h partout au Maroc. Emballage cadeau soigné sur demande."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Ils nous font confiance",
+    "subtitle": "Des centaines de foyers marocains illuminés par nos bougies.",
+    "items": [
+      {
+        "name": "Salma B.",
+        "city": "Casablanca",
+        "text": "La meilleure bougie que j'ai achetée ! L'odeur de l'ambre remplit toute la maison, et le design est magnifique."
+      },
+      {
+        "name": "Yassine K.",
+        "city": "Rabat",
+        "text": "J'ai offert la Vanille Royale à ma femme pour notre anniversaire. Emballage cadeau magnifique, elle était aux anges."
+      },
+      {
+        "name": "Imane T.",
+        "city": "Marrakech",
+        "text": "La Rose de Marrakech sent exactement comme le vrai jardin de roses. Livraison rapide, qualité premium."
+      },
+      {
+        "name": "Omar E.",
+        "city": "Tanger",
+        "text": "Bougies d'une élégance rare. L'Oud Majestueux est devenu un rituel dans notre salon chaque soir."
+      },
+      {
+        "name": "Fatima Z.",
+        "city": "Agadir",
+        "text": "On sent le travail artisanal dans chaque détail. La flamme est stable et la cire brûle proprement."
+      }
+    ]
+  },
+  "gift": {
+    "title": "Une bougie, un moment précieux",
+    "subtitle": "Offrez une expérience sensorielle inoubliable avec notre coffret cadeau personnalisé — gravé à votre message.",
+    "cta": "Composer mon coffret cadeau"
+  },
+  "faq": {
+    "title": "Questions fréquentes",
+    "items": [
+      {
+        "q": "Combien de temps brûle une bougie ?",
+        "a": "Nos bougies offrent entre 35 et 45 heures de brûlage selon le modèle. La mèche est taillée pour une combustion propre et homogène."
+      },
+      {
+        "q": "Quelle cire utilisez-vous ?",
+        "a": "Nous utilisons de la cire de soja 100% naturelle, sans parabène ni paraffine. Elle est biodégradable et brûle sans émettre de toxines."
+      },
+      {
+        "q": "Livrez-vous partout au Maroc ?",
+        "a": "Oui, nous livrons dans toutes les villes du Maroc sous 24 à 48 heures. La livraison est offerte à partir de 500 MAD d'achat."
+      },
+      {
+        "q": "Comment entretenir ma bougie ?",
+        "a": "Laissez brûler la première fois jusqu'à ce que la surface soit entièrement liquide, puis coupez la mèche à 5mm avant chaque allumage."
+      },
+      {
+        "q": "Puis-je payer à la livraison ?",
+        "a": "Bien sûr ! Nous proposons le paiement à la livraison (COD) partout au Maroc, ainsi que le paiement en ligne par carte bancaire."
+      },
+      {
+        "q": "Proposez-vous des cadeaux personnalisés ?",
+        "a": "Oui, nos coffrets cadeaux peuvent être personnalisés avec un message gravé sur le pot et un emballage sur mesure."
+      }
+    ]
+  },
+  "newsletter": {
+    "title": "Rejoignez le cercle LUMINA",
+    "subtitle": "Recevez -10% sur votre première commande et nos nouvelles collections en avant-première.",
+    "placeholder": "Votre adresse email",
+    "button": "S'inscrire",
+    "success": "Merci ! Vous recevrez bientôt votre code."
+  },
+  "footer": {
+    "tagline": "Bougies décoratives artisanales, coulées et décorées à la main au Maroc.",
+    "shop": "Boutique",
+    "company": "La Maison",
+    "links": {
+      "story": "Notre histoire",
+      "blog": "Le journal",
+      "contact": "Nous contacter"
+    },
+    "contact": "Contact",
+    "follow": "Suivez-nous",
+    "rights": "Tous droits réservés."
+  },
+  "products": {
+    "title": "La boutique",
+    "subtitle": "Choisissez votre pièce signature — chaque bougie est une pièce unique.",
+    "all": "Tous",
+    "sort": "Trier",    "sortNewest": "Nouveautés",
+    "sortPriceAsc": "Prix croissant",
+    "sortPriceDesc": "Prix décroissant",
+    "empty": "Aucun produit trouvé",
+    "from": "À partir de"
+  },
+  "categories": {
+    "signature": "Signature",
+    "luxe": "Luxe",
+    "saison": "Saison"
+  },
+  "product": {
+    "scent": "Parfum",
+    "weight": "Poids",
+    "burn": "Autonomie",
+    "stock": "En stock",
+    "outOfStock": "Épuisé",
+    "lowStock": "Plus que {count} en stock !",
+    "addToCart": "Ajouter au panier",
+    "buyNow": "Acheter maintenant",
+    "description": "Description",
+    "details": "Détails",
+    "related": "Vous aimerez aussi",
+    "back": "Retour à la boutique"
+  },
+  "cart": {
+    "title": "Votre panier",
+    "empty": "Votre panier est vide",
+    "emptyCta": "Découvrir nos bougies",
+    "quantity": "Quantité",
+    "total": "Total",
+    "subtotal": "Sous-total",
+    "shipping": "Livraison",
+    "shippingFree": "Offerte (Maroc)",
+    "freeShippingNote": "Livraison offerte dès 500 MAD",
+    "checkout": "Passer commande",
+    "continue": "Continuer mes achats",
+    "remove": "Retirer"
+  },
+  "checkout": {
+    "title": "Finaliser ma commande",
+    "contact": "Informations de contact",
+    "shipping": "Adresse de livraison",
+    "payment": "Mode de paiement",
+    "cod": "Paiement à la livraison",
+    "codDesc": "Payez en espèces à la réception de votre commande.",
+    "card": "Carte bancaire (Stripe)",
+    "cardDesc": "Paiement sécurisé en ligne.",
+    "name": "Nom complet",
+    "phone": "Téléphone",
+    "email": "Email (optionnel)",
+    "city": "Ville",
+    "address": "Adresse complète",
+    "notes": "Notes (optionnel)",
+    "placeOrder": "Confirmer la commande",
+    "processing": "Traitement...",
+    "error": "Une erreur est survenue, veuillez réessayer.",
+    "required": "Champs obligatoires",
+    "summary": "Récapitulatif",
+    "order": "Commande",
+    "redirecting": "Redirection vers le paiement sécurisé..."
+  },
+  "orderSuccess": {
+    "title": "Merci pour votre commande !",
+    "codMsg": "Notre équipe vous contactera bientôt pour confirmer la livraison. Préparez le montant en espèces.",
+    "cardMsg": "Votre paiement a été confirmé. Nous préparons votre commande avec soin.",
+    "number": "Numéro de commande",
+    "total": "Montant",
+    "payment": "Paiement",
+    "status": "Statut",
+    "watchStatus": "Suivre ma commande",
+    "backHome": "Retour à l'accueil"
+  },
+  "blog": {
+    "title": "Le journal LUMINA",
+    "subtitle": "Conseils, inspirations et l'envers du décor de notre atelier.",
+    "readMore": "Lire l'article",
+    "back": "Retour au journal",
+    "related": "Articles similaires",
+    "notFound": "Article introuvable"
+  },
+  "contact": {
+    "title": "Parlons-en",
+    "subtitle": "Une question, une commande spéciale ou un partenariat ? Écrivez-nous.",
+    "form": {
+      "name": "Votre nom",
+      "email": "Votre email",
+      "phone": "Téléphone (optionnel)",
+      "subject": "Sujet",
+      "message": "Votre message",
+      "send": "Envoyer",
+      "sending": "Envoi...",
+      "success": "Message envoyé ! Nous vous répondrons sous 24h."
+    },
+    "info": {
+      "title": "Nos coordonnées",
+      "address": "Atelier : Casablanca, Maroc",
+      "hours": "Lun–Sam : 9h à 18h",
+      "whatsapp": "WhatsApp"
+    }
+  },
+  "admin": {
+    "loginTitle": "Espace administrateur",
+    "username": "Nom d'utilisateur",
+    "password": "Mot de passe",
+    "login": "Se connecter",
+    "wrong": "Identifiants incorrects",
+    "dashboard": "Tableau de bord",
+    "orders": "Commandes",
+    "products": "Produits",
+    "messages": "Messages",
+    "logout": "Déconnexion",
+    "revenue": "Revenus",
+    "totalOrders": "Commandes",
+    "pendingOrders": "En attente",
+    "messagesCount": "Messages"
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "subtitle": "La page que vous cherchez n'existe pas ou a été déplacée.",
+    "cta": "Retour à l'accueil"
+  },
+  "ad": {
+    "strip": "Offre spéciale — Livraison partout au Maroc",
+    "offerEnds": "L'offre se termine dans",
+    "hours": "h",
+    "minutes": "min",
+    "seconds": "s",
+    "stockLeft": "Plus que {count} en stock !",
+    "almostSold": "Presque épuisé — dépêchez-vous",
+    "orderNow": "Commander maintenant",
+    "trust": ["Paiement à la livraison", "Livraison 24-48h", "Qualité garantie"],
+    "whyTitle": "Pourquoi vous allez l'adorer",
+    "whySubtitle": "Une bougie d'exception, pensée dans les moindres détails",
+    "why": [
+      {
+        "title": "Cire de soja naturelle",
+        "desc": "Combustion propre et longue, sans toxines. Jusqu'à 48 heures de brûlage."
+      },
+      {
+        "title": "Parfum d'exception",
+        "desc": "Concentration élevée en huiles parfumées de qualité supérieure."
+      },
+      {
+        "title": "Décorée à la main",
+        "desc": "Fleurs séchées, or fin et finitions artisanales — chaque pièce est unique."
+      },
+      {
+        "title": "Emballage cadeau soigné",
+        "desc": "Prête à offrir, avec une attention particulière aux détails."
+      }
+    ],
+    "reviewsTitle": "Elles font déjà fureur",
+    "reviews": [
+      {
+        "name": "Khadija M.",
+        "city": "Casablanca",
+        "text": "Commandée hier, livrée aujourd'hui ! L'odeur est incroyable, tout le monde me demande où je l'ai achetée."
+      },
+      {
+        "name": "Sara L.",
+        "city": "Rabat",
+        "text": "La qualité est vraiment premium, on sent le travail artisanal. Je vais en recommander pour offrir."
+      },
+      {
+        "name": "Hind B.",
+        "city": "Marrakech",
+        "text": "Livraison rapide et le paiement à la réception, trop pratique. La bougie est magnifique !"
+      }
+    ],
+    "faqTitle": "Questions fréquentes",
+    "faq": [
+      {
+        "q": "Comment se passe le paiement ?",
+        "a": "Vous payez à la réception de votre colis. Aucun paiement en ligne nécessaire."
+      },
+      {
+        "q": "Quel est le délai de livraison ?",
+        "a": "24 à 48 heures partout au Maroc, selon votre ville."
+      },
+      {
+        "q": "Puis-je offrir cette bougie ?",
+        "a": "Absolument ! L'emballage est soigné et prêt à offrir. Ajoutez une note lors de votre commande."
+      }
+    ],
+    "finalTitle": "Ne manquez pas l'offre",
+    "finalSubtitle": "Le stock est limité et l'offre expire bientôt. Commandez maintenant et payez à la livraison."
+  },
+  "actions": {
+    "backHome": "Retour à l'accueil"
+  }
+}

@@ -1,0 +1,102 @@
+datasource db {
+  provider = "sqlite"
+}
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+model Product {
+  id             String      @id @default(cuid())
+  slug           String      @unique
+  nameFr         String
+  nameAr         String
+  descriptionFr  String
+  descriptionAr  String
+  price          Float
+  compareAtPrice Float?
+  scentFr        String
+  scentAr        String
+  colorHex       String      @default("#f5d9a8")
+  image          String
+  category       String      @default("classic")
+  featured       Boolean     @default(false)
+  stock          Int         @default(50)
+  weightGr       Int         @default(220)
+  burnHours      Int         @default(40)
+  createdAt      DateTime    @default(now())
+  updatedAt      DateTime    @updatedAt
+  orderItems     OrderItem[]
+}
+
+model Order {
+  id              String      @id @default(cuid())
+  number          String      @unique
+  customerName    String
+  phone           String
+  city            String
+  address         String
+  email           String?
+  notes           String?
+  paymentMethod   String // COD | STRIPE
+  status          String      @default("PENDING") // PENDING PAID CONFIRMED SHIPPED DELIVERED CANCELLED
+  total           Float
+  currency        String      @default("MAD")
+  stripeSessionId String?     @unique
+  utmSource       String?
+  utmCampaign     String?
+  utmMedium       String?
+  utmContent      String?
+  items           OrderItem[]
+  statusEvents    OrderStatusEvent[]
+  createdAt       DateTime    @default(now())
+  updatedAt       DateTime    @updatedAt
+}
+
+model OrderStatusEvent {
+  id        String   @id @default(cuid())
+  orderId   String
+  order     Order    @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  status    String
+  note      String?
+  createdAt DateTime @default(now())
+}
+
+model OrderItem {
+  id        String  @id @default(cuid())
+  orderId   String
+  order     Order   @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  productId String?
+  product   Product? @relation(fields: [productId], references: [id])
+  name      String
+  price     Float
+  quantity  Int
+}
+
+model BlogPost {
+  id        String   @id @default(cuid())
+  slug      String   @unique
+  titleFr   String
+  titleAr   String
+  excerptFr String
+  excerptAr String
+  contentFr String
+  contentAr String
+  image     String
+  category  String   @default("astuce")
+  published Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model ContactMessage {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  phone     String?
+  subject   String
+  message   String
+  read      Boolean  @default(false)
+  createdAt DateTime @default(now())
+}

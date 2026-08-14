@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bgb" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1d1710"/>
+      <stop offset="50%" stop-color="#120e09"/>
+      <stop offset="100%" stop-color="#0b0a08"/>
+    </linearGradient>
+    <radialGradient id="glowb" cx="75%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#d4a94f" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#d4a94f" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="waxb" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgb(227,199,141)"/>
+      <stop offset="100%" stop-color="rgb(127,101,47)"/>
+    </linearGradient>
+    <radialGradient id="flameb" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffe9b8" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#ff8a2a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bgb)"/>
+  <rect width="1200" height="630" fill="url(#glowb)"/>
+  <g opacity="0.95">
+    <rect x="790" y="200" width="240" height="320" rx="30" fill="rgba(255,255,255,0.06)" stroke="#ffffff" stroke-opacity="0.2"/>
+    <rect x="778" y="184" width="264" height="34" rx="14" fill="rgba(255,255,255,0.08)" stroke="#ffffff" stroke-opacity="0.25"/>
+    <rect x="804" y="250" width="212" height="252" rx="22" fill="url(#waxb)"/>
+    <ellipse cx="910" cy="250" rx="106" ry="15" fill="rgb(227,199,141)"/>
+    <path d="M858 288 q -10 26 2 46" stroke="rgb(227,199,141)" stroke-width="12" fill="none" stroke-linecap="round"/>
+    <rect x="904" y="190" width="12" height="60" rx="5" fill="#161412"/>
+    <ellipse cx="910" cy="165" rx="80" ry="80" fill="url(#flameb)"/>
+    <path d="M910 128 C 925 156, 927 180, 910 194 C 893 180, 895 156, 910 128 Z" fill="#ffc46b"/>
+    <path d="M910 148 C 918 164, 918 182, 910 192 C 902 182, 902 164, 910 148 Z" fill="#fff3d6"/>
+  </g>
+  <g fill="#d4a94f" opacity="0.8">
+    <circle cx="250" cy="150" r="4"/>
+    <circle cx="700" cy="120" r="3"/>
+    <circle cx="170" cy="330" r="2.6"/>
+    <circle cx="640" cy="500" r="3.4"/>
+    <circle cx="360" cy="520" r="2.4"/>
+    <circle cx="560" cy="90" r="2.8"/>
+    <circle cx="430" cy="250" r="2.2"/>
+  </g>
+  <g stroke="rgb(221,186,114)" stroke-width="1.8" opacity="0.65">
+    <path d="M240 430 l10 18 M250 430 l-10 18"/>
+    <path d="M520 300 l8 14 M528 300 l-8 14"/>
+    <path d="M300 560 l7 12 M307 560 l-7 12"/>
+    <path d="M620 260 l6 11 M626 260 l-6 11"/>
+  </g>
+</svg>
